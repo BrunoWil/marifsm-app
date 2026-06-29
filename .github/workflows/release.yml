@@ -2,7 +2,7 @@ name: Release CI
 
 on:
   push:
-    branches: [ master ] # Roda quando houver push na branch main
+    branches: [ master ] # Roda quando houver push na branch master
 
 jobs:
   build-tauri:

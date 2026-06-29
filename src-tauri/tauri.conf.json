@@ -19,7 +19,15 @@
       }
     ],
     "security": {
-      "csp": "default-src 'self' https://*.twitch.tv https://*.ttvnw.net; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://embed.twitch.tv https://*.twitch.tv; frame-src 'self' https://player.twitch.tv https://www.twitch.tv https://embed.twitch.tv; connect-src 'self' ipc: http://ipc.localhost https://gql.twitch.tv https://gql.twitch.tv/gql https://*.ttvnw.net wss://*.twitch.tv; media-src 'self' blob: https://*.ttvnw.net; style-src 'self' 'unsafe-inline';",
+      "csp": {
+        "default-src": "'self' https://*.twitch.tv https://*.ttvnw.net",
+        "script-src": "'self' 'unsafe-inline' 'unsafe-eval' https://embed.twitch.tv https://*.twitch.tv",
+        "frame-src": "'self' https://player.twitch.tv https://www.twitch.tv https://embed.twitch.tv",
+        "connect-src": "'self' ipc: http://ipc.localhost https://gql.twitch.tv https://gql.twitch.tv/gql https://*.ttvnw.net wss://*.twitch.tv",
+        "media-src": "'self' blob: https://*.ttvnw.net",
+        "style-src": "'self' 'unsafe-inline'",
+        "frame-ancestors": "'self'"
+      },
       "dangerousDisableAssetCspModification": true
     }
   },
