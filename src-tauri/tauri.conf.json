@@ -1,0 +1,37 @@
+{
+  "productName": "marifsm-app",
+  "version": "0.1.0",
+  "identifier": "com.marifsm.app",
+  "build": {
+    "beforeDevCommand": "bun run start",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "bun run build",
+    "frontendDist": "../dist/marifsm-app/browser"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "useHttpsScheme": true,
+        "title": "marifsm - Twitch", 
+        "width": 1200,
+        "height": 800
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self' https://*.twitch.tv https://*.ttvnw.net; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://embed.twitch.tv https://*.twitch.tv; frame-src 'self' https://player.twitch.tv https://www.twitch.tv https://embed.twitch.tv; connect-src 'self' ipc: http://ipc.localhost https://gql.twitch.tv https://gql.twitch.tv/gql https://*.ttvnw.net wss://*.twitch.tv; media-src 'self' blob: https://*.ttvnw.net; style-src 'self' 'unsafe-inline';",
+      "dangerousDisableAssetCspModification": true
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ]
+  }
+}

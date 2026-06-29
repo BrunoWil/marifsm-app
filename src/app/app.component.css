@@ -1,0 +1,41 @@
+.twitch-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0e0e10;
+  overflow: hidden;
+}
+
+.twitch-video {
+  flex-grow: 1;
+  width: 100%; /* Garante que o flex-grow funcione corretamente */
+  height: 100%;
+  border: none;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  width: 340px; /* Largura padrão do chat da Twitch */
+  height: 100%;
+}
+
+.login-button {
+  background-color: #9147ff;
+  color: white;
+  border: none;
+  padding: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
+.login-button:hover {
+  background-color: #772ce8;
+}
+
+.twitch-chat {
+  flex-grow: 1;
+  height: 100%;
+  border: none;
+}

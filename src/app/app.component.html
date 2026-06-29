@@ -1,0 +1,21 @@
+<div class="twitch-container">
+<!-- Vídeo -->
+<iframe
+  src="https://player.twitch.tv/?channel=marifsm&parent=tauri.localhost&parent=localhost&autoplay=true"
+  frameborder="0"
+  allowfullscreen="true"
+  scrolling="no"
+  class="twitch-video">
+</iframe>
+
+<!-- Chat -->
+<div class="chat-container">
+  <button class="login-button" (click)="login()">Login</button>
+  <iframe
+    src="https://www.twitch.tv/embed/marifsm/chat?parent=tauri.localhost&parent=localhost&darkpopout"
+    frameborder="0"
+    scrolling="no"
+    class="twitch-chat">
+  </iframe>
+</div>
+</div>
