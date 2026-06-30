@@ -7,8 +7,7 @@
 }
 
 .twitch-video {
-  flex-grow: 1;
-  width: 100%; /* Garante que o flex-grow funcione corretamente */
+  width: 75%;
   height: 100%;
   border: none;
 }
@@ -16,7 +15,7 @@
 .chat-container {
   display: flex;
   flex-direction: column;
-  width: 340px; /* Largura padrão do chat da Twitch */
+  width: 25%;
   height: 100%;
 }
 
